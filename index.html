@@ -19,8 +19,89 @@
     </b>
   </nav>
   <main>
-    <h2>Welcome to Our Website</h2>
-    <img src="images/wip.gif" alt="Work in progress GIF">
+    <h2>Use the forms below to find your ideal vacation</h2>
+    <h3>This form allows you to search by your desired destination. We will tell you the best time of year to travel based on your ideal temperature and budget ranges.</h3>
+    <form >
+      <fieldset>
+        <legend>Search By Destination</legend>
+        <label for="from">From:</label><br>
+        <input type="search" id="from" placeholder="Departing from" required><br>
+  
+        <br>
+  
+        <label for="to">To:</label><br>
+        <input type="search" id="to" placeholder="Your Destination" required><br>
+  
+        <br>
+  
+        <label for="minTemp">Minimum Temperature(Celsius):</label><br>
+        -30 <input type="range" id="minTemp" value="20" min="-30" max="60" step="1"> 60<br>
+  
+        <br>
+  
+        <label for="maxTemp">Maximum Temperature(Celsius):</label><br>
+        -30 <input type="range" id="maxTemp" value="30" min="-30" max="60" step="1"> 60<br>
+  
+        <br>
+  
+        <label for="minPrice">Minimum Price(CAD):</label><br>
+        <input type="number" id="minPrice" value="1000" ><br>
+  
+        <br>
+  
+        <label for="maxPrice">Maximum Price(CAD):</label><br>
+        <input type="number" id="maxPrice" value="1000"><br>
+  
+        <br>
+  
+        <input type="submit" value="Submit">
+      </fieldset>
+
+  </form>
+
+  <h3>This form allows you to search by your desired travel dates. We will give you the best destinations based on your ideal temperature and budget ranges.</h3>
+  <form >
+    <fieldset>
+      <legend>Search By Date</legend>
+      <label for="from">From:</label><br>
+      <input type="search" id="from" placeholder="Departing from" required><br>
+
+      <br>
+
+      <label for="start">Start:</label><br>
+      <input type="date" id="start" placeholder="Start date" required><br>
+
+      <br><label for="end">End:</label><br>
+      <input type="date" id="end" placeholder="End date" required><br>
+
+      <br>
+
+
+      <label for="minTemp">Minimum Temperature(Celsius):</label><br>
+      -30 <input type="range" id="minTemp" value="20" min="-30" max="60" step="1"> 60<br>
+
+      <br>
+
+      <label for="maxTemp">Maximum Temperature(Celsius):</label><br>
+      -30 <input type="range" id="maxTemp" value="30" min="-30" max="60" step="1"> 60<br>
+
+      <br>
+
+      <label for="minPrice">Minimum Price(CAD):</label><br>
+      <input type="number" id="minPrice" value="1000" ><br>
+
+      <br>
+
+      <label for="maxPrice">Maximum Price(CAD):</label><br>
+      <input type="number" id="maxPrice" value="1000"><br>
+
+      <br>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+
+</form>
+
   </main>
   <footer>
     <hr>
