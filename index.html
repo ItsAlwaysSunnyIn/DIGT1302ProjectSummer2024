@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>It's Always Sunny In...</title>
@@ -7,15 +7,16 @@
 </head>
 <body>
   <header>
-      <a href="index.html"><h1 style="display: inline;">It's Always Sunny In... <img src="images/destinationsThin.gif" alt="gif of destinations"/></h1></a>
-      <a href="createaccount.html"><img src="images/register.png" width="30"></a>&nbsp;&nbsp;
-      <a href="signin.html"><img src="images/login.jpg" width="30"></a>
+      <a href="index.html"><h1 style="display: inline;">It's Always Sunny In... <img src="images/destinationsThin.gif" alt="gif of destinations"></h1></a>
+      <a href="createaccount.html"><img src="images/register.png" alt="Register" width="30"></a>&nbsp;&nbsp;
+      <a href="signin.html"><img src="images/login.jpg" alt="Sign In" width="30"></a>
   </header>
   <nav>
     <b>
       <a href="index.html">Home</a>&nbsp;&nbsp;
         <a href="about.html">About Us</a>&nbsp;&nbsp;
         <a href="contact.html">Contact</a>&nbsp;&nbsp;
+        <a href="blog.html">Blog</a>&nbsp;&nbsp;
     </b>
   </nav>
   <main>
@@ -26,82 +27,52 @@
         <legend>Search By Destination</legend>
         <label for="from">From:</label><br>
         <input type="search" id="from" placeholder="Departing from" required><br>
-  
         <br>
-  
         <label for="to">To:</label><br>
         <input type="search" id="to" placeholder="Your Destination" required><br>
-  
         <br>
-  
         <label for="minTemp">Minimum Temperature(Celsius):</label><br>
         -30 <input type="range" id="minTemp" value="20" min="-30" max="60" step="1"> 60<br>
-  
         <br>
-  
         <label for="maxTemp">Maximum Temperature(Celsius):</label><br>
         -30 <input type="range" id="maxTemp" value="30" min="-30" max="60" step="1"> 60<br>
-  
         <br>
-  
         <label for="minPrice">Minimum Price(CAD):</label><br>
         <input type="number" id="minPrice" value="1000" ><br>
-  
         <br>
-  
         <label for="maxPrice">Maximum Price(CAD):</label><br>
-        <input type="number" id="maxPrice" value="1000"><br>
-  
-        <br>
-  
+        <input type="number" id="maxPrice" value="1000"><br> 
+        <br> 
         <input type="submit" value="Submit">
       </fieldset>
-
   </form>
-
   <h3>This form allows you to search by your desired travel dates. We will give you the best destinations based on your ideal temperature and budget ranges.</h3>
   <form >
     <fieldset>
       <legend>Search By Date</legend>
       <label for="from">From:</label><br>
       <input type="search" id="from" placeholder="Departing from" required><br>
-
       <br>
-
       <label for="start">Start:</label><br>
-      <input type="date" id="start" placeholder="Start date" required><br>
-
+      <input type="date" id="start" required><br>
       <br><label for="end">End:</label><br>
-      <input type="date" id="end" placeholder="End date" required><br>
-
+      <input type="date" id="end" required><br>
       <br>
-
-
       <label for="minTemp">Minimum Temperature(Celsius):</label><br>
       -30 <input type="range" id="minTemp" value="20" min="-30" max="60" step="1"> 60<br>
-
       <br>
-
       <label for="maxTemp">Maximum Temperature(Celsius):</label><br>
       -30 <input type="range" id="maxTemp" value="30" min="-30" max="60" step="1"> 60<br>
-
       <br>
-
       <label for="minPrice">Minimum Price(CAD):</label><br>
       <input type="number" id="minPrice" value="1000" ><br>
-
       <br>
-
       <label for="maxPrice">Maximum Price(CAD):</label><br>
       <input type="number" id="maxPrice" value="1000"><br>
-
       <br>
-
       <input type="submit" value="Submit">
     </fieldset>
-
 </form>
-
   </main>
   <footer>
     <hr>
