@@ -101,11 +101,19 @@ fieldset {
     border: none;
 }
 
-form label, form input, form textarea, form legend, form button, form a {
-    font-size: 0.8em;
+form legend {
+    font-weight: bold;  
     min-width: 50%;
+    font-size: 1.5em;
 }
 
+form label, form input, form textarea, form button, form a {
+    font-size: 0.8em;
+}
+
+form button:hover {
+    background-color: blue;
+}
 
 footer {
     text-align: center;
@@ -129,7 +137,15 @@ p {
 
 img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
+}
+
+#gallery {
+    list-style-type: none;
+}
+
+#gallery li{
+    font-style: italic;
+}
 
 @media (min-width: 600px) {
 
