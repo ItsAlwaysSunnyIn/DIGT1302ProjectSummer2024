@@ -89,6 +89,12 @@ main {
     
 }
 
+
+#dateForm {
+    display: none;
+}
+
+
 form {
     width: 80%;
     margin: 0 auto;
@@ -127,6 +133,10 @@ article {
     text-align: left;
 }
 
+.postContent {
+    display: none;
+}
+
 h2 {
     font-size: 2em;
 }
@@ -139,9 +149,9 @@ img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#gallery {
+/* #gallery {
     list-style-type: none;
-}
+} */
 
 #gallery li{
     font-style: italic;
