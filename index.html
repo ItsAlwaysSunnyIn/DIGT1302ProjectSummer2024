@@ -5,6 +5,7 @@
   <title>It's Always Sunny In...</title>
   <link rel="icon" href="images/ivy.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -25,10 +26,13 @@
   </nav>
   <main>
     <h2>Use the forms below to find your ideal vacation</h2>
-    <h3>This form allows you to search by your desired destination. We will tell you the best time of year to travel based on your ideal temperature and budget ranges.</h3>
-    <form >
+    
+    <div id="formSwitcher"><button id="destButton" >Search by Destination</button>&nbsp;&nbsp;<button id="dateButton" >Search by Date</button></div>
+
+    <form id="destForm">
       <fieldset>
         <legend>Search By Destination</legend>
+        <h3>This form allows you to search by your desired destination. We will tell you the best time of year to travel based on your ideal temperature and budget ranges.</h3>
         <label for="from">From:</label><br>
         <input type="search" id="from" placeholder="Departing from" required><br>
         <br>
@@ -50,10 +54,11 @@
         <input type="submit" value="Submit">
       </fieldset>
   </form>
-  <h3>This form allows you to search by your desired travel dates. We will give you the best destinations based on your ideal temperature and budget ranges.</h3>
-  <form >
+  
+  <form id="dateForm">
     <fieldset>
       <legend>Search By Date</legend>
+      <h3>This form allows you to search by your desired travel dates. We will give you the best destinations based on your ideal temperature and budget ranges.</h3>
       <label for="from2">From:</label><br>
       <input type="search" id="from2" placeholder="Departing from" required><br>
       <br>
