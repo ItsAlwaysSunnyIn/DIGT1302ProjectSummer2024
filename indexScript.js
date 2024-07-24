@@ -6,6 +6,7 @@ function loadedHandler() {
 
     let textBox2 = document.querySelector("#dateButton");
     textBox2.addEventListener("click", showDateForm);
+
  }
 
 
@@ -18,5 +19,7 @@ function showDateForm(){
     document.getElementById("dateForm").style.display = "flex";
     document.getElementById("destForm").style.display = "none";
 }
+
+
 // document.getElementById("destButton").onclick = showDestForm;
 // document.getElementById("dateButton").onclick = showDateForm;
