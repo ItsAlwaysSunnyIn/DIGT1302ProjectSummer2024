@@ -133,6 +133,10 @@ article {
     text-align: left;
 }
 
+.postTitle {
+    border: 1px solid black;
+}
+
 .postContent {
     display: none;
 }
