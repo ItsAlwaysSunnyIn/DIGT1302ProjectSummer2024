@@ -6,14 +6,15 @@
   <link rel="icon" href="images/ivy.png">
   <link rel="stylesheet" href="styles.css">
   <script src="blogScript.js"></script>
+  <script src="tooltipScript.js"></script>
 </head>
 <body>
   <header>
     <div class="header">
       <a href="index.html"><h1 >It's Always Sunny In... </h1></a>
-      <a href="index.html"><img src="images/destinationsThin.gif" alt="gif of destinations"></a>
-      <a class="icons" href="createaccount.html"><img src="images/register.png" alt="Register" width="30"></a>
-      <a class="icons" href="signin.html"><img src="images/login.jpg" alt="Sign In" width="30"></a>
+      <a class="tooltip" href="index.html"><img src="images/destinationsThin.gif" alt="gif of destinations"><span class="tooltiptext">Home</span></a>
+      <a class="icons tooltip" href="createaccount.html"><img src="images/register.png" alt="Register" width="30"><span class="tooltiptext">Register</span></a>
+      <a class="icons tooltip" href="signin.html"><img src="images/login.jpg" alt="Sign In" width="30"><span class="tooltiptext">Sign In</span></a>
     </div>
 </header>
   <nav>
@@ -26,48 +27,63 @@
   </nav>
   <main>
     <h2>It's Always Sunny In Blog</h2>
-    <article>
-        <h3 class="postTitle">Carribean Islands On Everyone's Bucketlist<span style="float: right;">Click to Expand Post &darr;</span></h3>
-        <div class="postContent">
-          <h5>Alexandra Nicholaides | July 24, 2024</h5>
-          <p>The Carribean Islands, which are located in the Carribean Sea and North Atlantic Ocean, are some of the top destination islands to visit near the Americas.
-            These islands boast of beautiful beaches, delicious food, and great nightlife. 
-          </p>
-          <img src="images/Cyprus.png" alt="Ayia Napa in Cyprus" width="500">
-          <p></p>
-          <ol id="gallery">
-              <li>Aruba<br>
-                  <img src="images/ArubaResort.jpeg" alt="Riu Resort in Aruba" width="500"></li>
-              <li>Jamaica<br>
-                  <img src="images/Jamaica.jpeg" alt="Montego Bay in Jamaica at sunset" width="500"></li>
-              <li>Bahamas<br>
-                  <img src="images/Bahamas.jpeg" alt="Paradise Island in Bahamas" width="500"></li>
-          </ol>
+    <article class="card">
+        <img class="cardimage" src="images/Cyprus.png" alt="Ayia Napa in Cyprus" >
+        <div class="container">
+          <h3 class="postTitle">Carribean Islands On Everyone's Bucketlist <span class="author">Alexandra Nicholaides | July 24, 2024</span><span style="float: right;">Click to Expand Post &darr;</span></h3>
+          <div class="postContent">
+            <p>The Carribean Islands, which are located in the Carribean Sea and North Atlantic Ocean, are some of the top destination islands to visit near the Americas.
+              These islands boast of beautiful beaches, delicious food, and great nightlife. 
+            </p>
+            <p></p>
+            <ol id="gallery">
+                <li>
+                    <img src="images/ArubaResort.jpeg" alt="Riu Resort in Aruba" width="500"><br>
+                    Aruba</li>
+                <li>
+                    <img src="images/Jamaica.jpeg" alt="Montego Bay in Jamaica at sunset" width="500"><br>
+                    Jamaica</li>
+                <li>
+                    <img src="images/Bahamas.jpeg" alt="Paradise Island in Bahamas" width="500"><br>
+                    Bahamas</li>
+            </ol>
+          </div>
         </div>
     </article>
-    <article>
-      <h3 class="postTitle">Top 5 Places to Visit in Cyprus <span style="float: right;">Click to Expand Post &darr;</span></h3>
-      <div class="postContent">
-        <h5>Alexandra Nicholaides | June 9, 2024</h5>
-        <p>Cyprus is a great tourist destination for everyone no matter what type of vacation you are looking for. 
-            Cyprus has relaxing beaches, great trails on the montains for hiking, divine restaurants, and nightlife.</p>
-        <img src="images/Cyprus.png" alt="Ayia Napa in Cyprus" width="500">
-        <p>Cyprus is the third largest island in the Mediterannean, just after Sicily and Sardinia. 
-            It is a growing tourist destination known for beautiful beaches and great weather.
-            The best time to visit Cyprus is July and August where the temperature has daily highs above 31&deg;C 
-            and is sunny 13 hours a day with a zero average rainfall.</p>
-        <ol id="gallery">
-            <li>Ayia Napa<br>
-                <img src="images/AyiaNapa.jpeg" alt="Ayia Napa in Cyprus" width="500"></li>
-            <li>Kourion Beach in Limassol<br>
-                <img src="images/Kourionbeach.jpeg" alt="Kourion beach at sunset" width="500"></li>
-            <li>Aphrodite's Rock in Paphos<br>
-                <img src="images/rock.jpeg" alt="Aphrodite's rock" width="500"></li>
-            <li>Troodos Mountains<br>
-                <img src="images/Troodos.jpeg" alt="Troodos mountains" width="500"></li>
-            <li>Marina in Limassol<br>
-                <img src="images/Marina.png" alt="Limassol marina at night" width="500"></li>
-        </ol>
+    <article class="card">
+      <img class="cardimage" src="images/Cyprus.png" alt="Ayia Napa in Cyprus" >
+      <div class="container">
+        <h3 class="postTitle">Top 5 Places to Visit in Cyprus <span class="author">Alexandra Nicholaides | June 9, 2024</span><span style="float: right;">Click to Expand Post &darr;</span></h3>
+        <div class="postContent">
+          <p>Cyprus is a great tourist destination for everyone no matter what type of vacation you are looking for. 
+              Cyprus has relaxing beaches, great trails on the montains for hiking, divine restaurants, and nightlife.</p>
+          <p>Cyprus is the third largest island in the Mediterannean, just after Sicily and Sardinia. 
+              It is a growing tourist destination known for beautiful beaches and great weather.
+              The best time to visit Cyprus is July and August where the temperature has daily highs above 31&deg;C 
+              and is sunny 13 hours a day with a zero average rainfall.</p>
+          <ol id="gallery">
+              <li>
+                  <img src="images/AyiaNapa.jpeg" alt="Ayia Napa in Cyprus" width="500"><br>
+                  Ayia Napa
+                </li>
+              <li>
+                  <img src="images/Kourionbeach.jpeg" alt="Kourion beach at sunset" width="500"><br>
+                  Kourion Beach in Limassol
+                </li>
+              <li>
+                  <img src="images/rock.jpeg" alt="Aphrodite's rock" width="500"><br>
+                  Aphrodite's Rock in Paphos
+                </li>
+              <li>
+                  <img src="images/Troodos.jpeg" alt="Troodos mountains" width="500"><br>
+                  Troodos Mountains
+                </li>
+              <li>
+                  <img src="images/Marina.png" alt="Limassol marina at night" width="500"><br>
+                  Marina in Limassol
+                </li>
+          </ol>
+        </div>
       </div>
   </article>
   </main>

@@ -121,6 +121,10 @@ form button:hover {
     background-color: blue;
 }
 
+button {
+    cursor: pointer;
+}
+
 footer {
     text-align: center;
 }
@@ -134,11 +138,45 @@ article {
 }
 
 .postTitle {
-    border: 1px solid black;
+    cursor: pointer;
+}
+
+.author {
+    font-size: small;
 }
 
 .postContent {
     display: none;
+}
+
+
+.card {
+    width: 80%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    margin: 0 auto 2em;
+    background-color: white;
+}
+
+.cardimage {
+    width: 100%;
+    max-height: 700px;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    padding: 3px 14px;
+}
+
+
+li > img {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
 h2 {
@@ -149,9 +187,6 @@ p {
     font-size: 1.5em;
 }
 
-img {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
 
 /* #gallery {
     list-style-type: none;
@@ -159,7 +194,39 @@ img {
 
 #gallery li{
     font-style: italic;
+    font-size: xx-large;
+    font-family: "brush script MT", cursive;
+    padding: 2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    opacity: 0.7;
+   
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 @media (min-width: 600px) {
 
