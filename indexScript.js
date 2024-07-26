@@ -17,6 +17,10 @@ function loadedHandler() {
         } else {
             input.addEventListener("change", function () { makeDirty(); });
         }
+
+        if(input.type == "range"){
+            input.addEventListener("change", function () { changeTitle(input); });
+        }
     }
 
  }
@@ -44,6 +48,10 @@ function makeDirty(){
 
 function onSubmitForm(){
     isDirty = false;
+}
+
+function changeTitle(input){
+    input.title = input.value;
 }
 
 // document.getElementById("destButton").onclick = showDestForm;

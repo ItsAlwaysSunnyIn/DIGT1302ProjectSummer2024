@@ -30,7 +30,7 @@
     
     <div id="formSwitcher"><button id="destButton" >Search by Destination</button>&nbsp;&nbsp;<button id="dateButton" >Search by Date</button></div>
 
-    <form id="destForm">
+    <form id="destForm" method="get">
       <fieldset>
         <legend>Search By Destination</legend>
         <h3>This form allows you to search by your desired destination. We will tell you the best time of year to travel based on your ideal temperature and budget ranges.</h3>
@@ -41,10 +41,10 @@
         <input type="search" id="to" placeholder="Your Destination" required><br>
         <br>
         <label for="minTemp">Minimum Temperature(Celsius):</label><br>
-        -30 <input type="range" id="minTemp" value="20" min="-30" max="60" step="1"> 60<br>
+        -30 <input title="20" type="range" id="minTemp" value="20" min="-30" max="60" step="1"> 60<br>
         <br>
         <label for="maxTemp">Maximum Temperature(Celsius):</label><br>
-        -30 <input type="range" id="maxTemp" value="30" min="-30" max="60" step="1"> 60<br>
+        -30 <input title="30" type="range" id="maxTemp" value="30" min="-30" max="60" step="1"> 60<br>
         <br>
         <label for="minPrice">Minimum Price(CAD):</label><br>
         <input type="number" id="minPrice" value="1000" ><br>
@@ -69,10 +69,10 @@
       <input type="date" id="end" required><br>
       <br>
       <label for="minTemp2">Minimum Temperature(Celsius):</label><br>
-      -30 <input type="range" id="minTemp2" value="20" min="-30" max="60" step="1"> 60<br>
+      -30 <input title="20" type="range" id="minTemp2" value="20" min="-30" max="60" step="1"> 60<br>
       <br>
       <label for="maxTemp2">Maximum Temperature(Celsius):</label><br>
-      -30 <input type="range" id="maxTemp2" value="30" min="-30" max="60" step="1"> 60<br>
+      -30 <input title="30" type="range" id="maxTemp2" value="30" min="-30" max="60" step="1"> 60<br>
       <br>
       <label for="minPrice2">Minimum Price(CAD):</label><br>
       <input type="number" id="minPrice2" value="1000" ><br>
