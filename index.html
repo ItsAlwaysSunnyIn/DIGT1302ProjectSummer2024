@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="js/indexScript.js"></script>
   <script src="js/tooltipScript.js"></script>
+  <script src="js/gallery.js"></script>
 </head>
 <body>
   <header>
@@ -85,6 +86,28 @@
       <input type="submit" value="Submit">
     </fieldset>
 </form>
+&nbsp;
+<div id="pics">
+
+  <div id="arrowl">
+    <img src="images/left.png" width="125" height="75" onClick="switchImg()">
+  </div>
+
+
+  <div id='image1'>
+    <a href="blog.html#article1">
+      <img id="myimg" src="images/Cyprus.png" alt="Ayia Napa in Cyprus">
+      <h3 class="postTitle" id="blogTitle">Top 5 Places to Visit in Cyprus </h3>
+        <span class="author" id="authorName">Alexandra Nicholaides | June 9, 2024</span>
+        <!-- <span style="float: right;">Click to Expand Post &darr;</span> -->
+    </a>
+  </div>
+
+  <div id="arrowr">
+    <img src="images/right.png" width="125" height="75" onClick="switchImg()">
+  </div>
+
+</div>
   </main>
   <footer>
     <hr>
