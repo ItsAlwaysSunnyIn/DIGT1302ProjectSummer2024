@@ -77,12 +77,21 @@ function destFormSubmit(event) {
     
 
     if(event.target.id == "destForm" && !isError){
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const randomMonthIndex = Math.floor(Math.random() * months.length);
+        const randomMonth = months[randomMonthIndex];
+
+
+
+
         console.log("Hello");
         var from = document.getElementById("from").value;
         var to = document.getElementById("to").value;
         var paragraph = document.createElement("p");
-        paragraph.innerHTML = from + "<br>" + to;
-        document.querySelector("main").appendChild(paragraph);
+        paragraph.innerHTML = "The ideal time to travel to " + to + " is " + randomMonth;
+        //paragraph.innerHTML = from + "<br>" + to;
+        document.querySelector("#results").innerHTML = "";
+        document.querySelector("#results").appendChild(paragraph);
     }
 }
 
@@ -116,12 +125,18 @@ function dateFormSubmit(event) {
     
 
     if(event.target.id == "dateForm" && !isError){
+
+        const destinations = ["Bahamas", "Fiji", "Aruba", "Mexico", "Maldives", "Cyprus", "Australia", "South Korea", "Wales", "Seychelles", "Mauritius", "Turks and Caicos", "Bora Bora", "Thailand", "Bali", "Japan"];
+        const randomDestIndex = Math.floor(Math.random() * destinations.length);
+        const randomDest = destinations[randomDestIndex];
+
         error.textContent = "";
         console.log("Hello");
-        var from = document.getElementById("from2").value;
         var paragraph = document.createElement("p");
-        paragraph.innerHTML = from + "<br>";
-        document.querySelector("main").appendChild(paragraph);
+        paragraph.innerHTML = "The ideal destination in the date-range " + start + " to " + end + " in the temperature range " + minTemp + " to " + maxTemp + " and price range " + minPrice + " to " + maxPrice + " is " + randomDest;
+        //paragraph.innerHTML = from + "<br>";
+        document.querySelector("#results").innerHTML = "";
+        document.querySelector("#results").appendChild(paragraph);
     }
 }
 
