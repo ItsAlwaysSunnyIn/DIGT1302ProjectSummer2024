@@ -5,8 +5,8 @@
   <title>It's Always Sunny In...</title>
   <link rel="icon" href="images/ivy.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="indexScript.js"></script>
-  <script src="tooltipScript.js"></script>
+  <script src="js/indexScript.js"></script>
+  <script src="js/tooltipScript.js"></script>
 </head>
 <body>
   <header>
@@ -30,10 +30,11 @@
     
     <div id="formSwitcher"><button id="destButton" >Search by Destination</button>&nbsp;&nbsp;<button id="dateButton" >Search by Date</button></div>
 
-    <form id="destForm" method="get">
+    <form id="destForm" >
       <fieldset>
         <legend>Search By Destination</legend>
         <h3>This form allows you to search by your desired destination. We will tell you the best time of year to travel based on your ideal temperature and budget ranges.</h3>
+        <p id="error1"></p>
         <label for="from">From:</label><br>
         <input type="search" id="from" placeholder="Departing from" required><br>
         <br>
@@ -60,6 +61,7 @@
     <fieldset>
       <legend>Search By Date</legend>
       <h3>This form allows you to search by your desired travel dates. We will give you the best destinations based on your ideal temperature and budget ranges.</h3>
+      <p id="error2"></p>
       <label for="from2">From:</label><br>
       <input type="search" id="from2" placeholder="Departing from" required><br>
       <br>

@@ -5,7 +5,8 @@
   <title>Create Account</title>
   <link rel="icon" href="images/ivy.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="tooltipScript.js"></script>
+  <script src="js/tooltipScript.js"></script>
+  <script src="js/createAccount.js"></script>
 </head>
 <body>
   <header>
@@ -26,8 +27,9 @@
   </nav>
   <main>
     <h2>Create Account</h2>
-    <form>
+    <form id="accountForm">
       <fieldset>
+        <p id="error1"></p>
         <label for="firstName">First Name:</label><br>
         <input type="text" id="firstName" placeholder="John" required autofocus><br>
         <br>
@@ -39,6 +41,9 @@
         <br>
         <label for="password">Password:</label><br>
         <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" id="password" placeholder="Password" required><br>
+        <br>
+        <label for="password2">Password:</label><br>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" id="password2" placeholder="Re-Enter Password" required><br>
         <br>
         <button type="submit">Sign Up</button>
       </fieldset>

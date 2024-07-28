@@ -121,6 +121,18 @@ form button:hover {
     background-color: blue;
 }
 
+input:invalid {
+    background-color: #ffdddd;
+}
+
+input:valid {
+    background-color: #ddffdd;
+}
+
+#error1, #error2 {
+    color: red;
+}
+
 button {
     cursor: pointer;
 }
