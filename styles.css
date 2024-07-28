@@ -341,7 +341,12 @@ p {
         height: 500px;
     }
 
-   
+    #image1 > a {
+        text-decoration: none;
+    }
 
+    #authorName {
+        margin-bottom: 1em;
+    }
     
 }
