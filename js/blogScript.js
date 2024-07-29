@@ -12,7 +12,7 @@ function loadedHandler() {
 	}
  }
 
-
+// Function to control expanding and contracting post content
 function postTitleClicked(postTitle, postContent) {
     if(up){
         up = false;

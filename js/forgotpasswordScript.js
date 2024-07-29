@@ -19,7 +19,7 @@ function loadedHandler() {
     forgotpassForm.addEventListener("submit", forgotpassFormSubmit);
 
  }
-
+// Function to send warning message that user will lose form data
 function leavePageWarning(event){
     if(isDirty){
         event.returnValue = "Hi";
@@ -33,7 +33,7 @@ function makeDirty(){
 function onSubmitForm(event){
     isDirty = false;
 }
-
+// alerts user that an email was sent to their email address (no email actually sent)
 function forgotpassFormSubmit(event) {
     isError = false;
     event.preventDefault();

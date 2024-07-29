@@ -168,7 +168,7 @@ article {
 
 .cardimage {
     width: 100%;
-    max-height: 700px;
+    max-height: 200px;
 }
 
 .card:hover {
@@ -178,7 +178,6 @@ article {
 .container {
     padding: 3px 14px;
 }
-
 
 li > img {
     height: 80%;
@@ -195,16 +194,20 @@ p {
     font-size: 1.5em;
 }
 
+#note {
+    font-size: 0.8em;
+}
 
-/* .gallery {
-    list-style-type: none;
-} */
+
+.gallery {
+    width: 80%;
+}
 
 .gallery li{
     font-style: italic;
     font-size: xx-large;
     font-family: "brush script MT", cursive;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     width: 80%;
     
@@ -217,6 +220,10 @@ p {
     flex-direction: column;
     text-align: center;
 }
+
+/* .gallery > img {
+    width: 50%;
+} */
 
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -235,6 +242,39 @@ p {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  /* For the gallery in index.html */
+  #pics {
+    display: flex; 
+    align-items: center; 
+    margin: 0;
+}
+#arrowl, #arrowr {
+    display: inline-block;
+    margin: 0 auto; 
+}
+
+#image1 {
+    width: 60%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* transition: 0.3s; */
+    /* margin: 0 auto 2em; */
+    background-color: white;
+    /* padding: 3px 14px; */
+}
+
+#myimg {
+    width: 100%;
+    height: 200px;
+}
+
+#image1 > a {
+    text-decoration: none;
+}
+
+#authorName {
+    margin-bottom: 1em;
+}
 
 @media (min-width: 600px) {
 
@@ -256,6 +296,18 @@ p {
 
     textarea {
         width: 80%;
+    }
+
+    #myimg {
+        height: 300px;
+    }
+
+    .cardimage {
+        max-height: 500px;
+    }
+
+    .gallery li{
+        padding: 2em;
     }
     
 }
@@ -312,37 +364,16 @@ p {
         z-index: -1;
     }
 
-    /* For the gallery in index.html */
-    #pics {
-        display: flex; 
-        align-items: center; 
-        margin: 0;
-    }
-    #arrowl, #arrowr {
-        display: inline-block;
-        margin: 0 auto; 
-    }
-
-    #image1 {
-        width: 60%;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        /* transition: 0.3s; */
-        /* margin: 0 auto 2em; */
-        background-color: white;
-        /* padding: 3px 14px; */
-    }
-
     #myimg {
-        width: 100%;
         height: 500px;
     }
 
-    #image1 > a {
-        text-decoration: none;
+    .cardimage {
+        max-height: 700px;
     }
 
-    #authorName {
-        margin-bottom: 1em;
+    .gallery li{
+        padding: 2em;
     }
     
 }
