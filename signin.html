@@ -6,6 +6,8 @@
   <link rel="icon" href="images/ivy.png">
   <link rel="stylesheet" href="styles.css">
   <script src="js/tooltipScript.js"></script>
+  <script src="js/signinScript.js"></script>
+
 </head>
 <body>
   <header>
@@ -26,7 +28,7 @@
   </nav>
   <main>
     <h2>Sign In</h2>
-    <form>
+    <form id="signinForm">
       <fieldset>
         <label for="email">Email:</label><br>
         <input type="email" id="email" placeholder="your@email.com" required autofocus><br>
@@ -38,6 +40,9 @@
         <button type="submit">Login</button>
       </fieldset>
     </form>
+
+<div id="result"></div>
+
 <p><a href="createaccount.html">Create account</a></p>
   </main>
   <footer>
