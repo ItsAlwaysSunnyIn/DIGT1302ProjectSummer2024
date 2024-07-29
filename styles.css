@@ -117,10 +117,6 @@ form label, form input, form textarea, form button, form a {
     font-size: 0.8em;
 }
 
-form button:hover {
-    background-color: blue;
-}
-
 input:invalid {
     background-color: #ffdddd;
 }
