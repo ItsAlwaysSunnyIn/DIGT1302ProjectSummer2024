@@ -196,11 +196,11 @@ p {
 }
 
 
-/* #gallery {
+/* .gallery {
     list-style-type: none;
 } */
 
-#gallery li{
+.gallery li{
     font-style: italic;
     font-size: xx-large;
     font-family: "brush script MT", cursive;
