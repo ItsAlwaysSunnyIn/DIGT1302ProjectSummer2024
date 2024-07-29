@@ -6,7 +6,7 @@ function loadedHandler() {
 
  }
 
-
+// This function makes tooltips follow the mouse
 function toolTipMouse(event) {
     var tooltip = document.querySelectorAll('.tooltiptext');
     for (var i=tooltip.length; i--;) {

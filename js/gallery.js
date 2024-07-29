@@ -7,7 +7,7 @@ function loadedHandler() {
 }
 
 
-
+// switches between gallery images as set interval
 function switchImg() {
     if (change == true) {
         document.querySelector("#image1 > a").href="blog.html#article2";

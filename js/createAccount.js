@@ -19,7 +19,7 @@ function loadedHandler() {
     accountForm.addEventListener("submit", accountFormSubmit);
 
  }
-
+// Function to send warning message that user will lose form data
 function leavePageWarning(event){
     if(isDirty){
         event.returnValue = "Hi";
@@ -33,7 +33,7 @@ function makeDirty(){
 function onSubmitForm(event){
     isDirty = false;
 }
-
+// function validates passwords
 function accountFormSubmit(event) {
     isError = false;
     event.preventDefault();

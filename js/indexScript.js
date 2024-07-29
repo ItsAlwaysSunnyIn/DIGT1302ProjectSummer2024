@@ -42,7 +42,7 @@ function showDateForm(){
     document.getElementById("dateForm").style.display = "flex";
     document.getElementById("destForm").style.display = "none";
 }
-
+// Function to send warning message that user will lose form data
 function leavePageWarning(event){
     if(isDirty){
         event.returnValue = "Hi";
@@ -56,7 +56,7 @@ function makeDirty(){
 function onSubmitForm(event){
     isDirty = false;
 }
-
+// form validation for the by destination form
 function destFormSubmit(event) {
     isError = false;
     event.preventDefault();
@@ -94,7 +94,7 @@ function destFormSubmit(event) {
         document.querySelector("#results").appendChild(paragraph);
     }
 }
-
+// form validation for the by date form
 function dateFormSubmit(event) {
     isError = false;
     event.preventDefault();
